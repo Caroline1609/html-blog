@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+article {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+article img, article video{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+article ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Ajoutez ce style pour rendre l'iframe responsive */
+article iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Cela maintient le ratio d'aspect de la vidéo */
+}
+
+
+.formulaire {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.formulaire input, .formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formulaire button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.commentaire {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: justify;
+}
+
+.commentaire h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.commentaire p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.commentaire strong {
+    color: #333;
+}
+
+
+@media screen and (max-width: 480px) {
+    .article ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .commentaire {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
